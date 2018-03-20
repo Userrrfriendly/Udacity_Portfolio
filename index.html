@@ -25,39 +25,40 @@
     </header>
     <hr class="hr-header">
     <!-- hero -->
-    <img class="img-fluid" src="./img/hero-large.jpg" alt=" ">
+    <picture>
+      <source srcset="./img/hero-medium.jpg" media="(min-width: 501px) and (max-width:1099px)">
+      <source srcset="./img/hero-small.jpg" media="(max-width: 500px)">
+      <img class="hero-image" src="./img/hero-large.jpg" alt=" ">
+    </picture>
     <!-- featured work -->
     <h2 class="featured-header">Featured Work</h2>
     <section class="card-container">
       <div class="card">
-        <a class="card-link" href="https://codepen.io/Userrrfriendly/pen/JbVrpp" target="blank" title="calculator" >
-          <img class="card-img-top" src="./img/calculator.jpg" alt="Calculator">
-        </a>
+        <img class="card-img-top" src="./img/calculator.jpg" alt="Calculator">
         <div class="card-body">
           <h4 class="card-title">Calculator</h4>
-          <p class="card-text">A javascript Calculator build with jQuery</p>
+          <p class="card-text">A javascript Calculator build with jQuery and Bootstrap</p>
+          <a class="card-link" href="https://codepen.io/Userrrfriendly/pen/JbVrpp" target="blank" title="calculator">https://codepen.io/Userrrfriendly/pen/JbVrpp</a>
         </div>
       </div>
       <div class="card">
-        <a class="card-link" href="https://codepen.io/Userrrfriendly/full/qmJyOj/" target="blank" title="Weather App">
-          <img class="card-img-top" src="./img/weatherapp.jpg" alt="Weather App">
-        </a>
+        <img class="card-img-top" src="./img/weatherapp.jpg" alt="Weather App">
         <div class="card-body">
           <h4 class="card-title">Weather App</h4>
           <p class="card-text">An app that tells the user the current weather based on location.</p>
+          <a class="card-link" href="https://codepen.io/Userrrfriendly/full/qmJyOj/" target="blank" title="Weather App">https://codepen.io/Userrrfriendly/full/qmJyOj/</a>
         </div>
       </div>
       <div class="card">
-        <a class="card-link" href="https://userrrfriendly.github.io/" target="blank" title="Travelling Card Project">
-          <img class="card-img-top" src="./img/travelling-card.jpg" alt="Future App">
-        </a>
+        <img class="card-img-top" src="./img/travelling-card.jpg" alt="Future App">
+        <h4 class="card-title">Travelling Cards Project</h4>
+        <p class="card-text">A webpage that displays landmarks and places of interest on an interactive map <em>(A mini project from the members of the #greek community of Front End Web Developer Udacity Program).</em></p>
+        <a class="card-link" href="https://userrrfriendly.github.io/" target="blank" title="Travelling Card Project">https://userrrfriendly.github.io/</a>
         <div class="card-body">
-          <h4 class="card-title">Travelling Cards Project</h4>
-          <p class="card-text">A webpage that displays landmarks and places of interest for different parts of the world <em>(A mini project from the members of the #greek community of Front End Web Developer Udacity Program)</em></p>
-        </div> 
-      </div>
-      <!-- test -->
-      <div class="card">
+      </div> 
+    </div>
+    <!-- test -->
+      <!-- <div class="card">
           <img class="card-img-top" src="./img/placeholder2.jpg" alt="Calculator">
           <div class="card-body">
             <h4 class="card-title">Calculator</h4>
@@ -81,7 +82,7 @@
             <a class="card-link" href="http://www.sport24.gr/" target="blank" title="Travelling Card Project">http://www.contra.gr/</a>
           </div>
         </div>
-  
+   -->
       <!-- /test -->
     </section>
     <footer>

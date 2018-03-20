@@ -20,17 +20,11 @@ footer {
 
 /* TODO:
 -0-Revive CodeCamp, fix past projects build new ones get the fucking degree
--0b-Upload Calculator
 -1-fallback image for HERO with the <picture> element
--1.a- move links from image to a seperate element
--2-Create Logo in Illustrator
--3-Add Description to the projects
--4-Add text to hero Image
--5-Add custom Font
--6-create footer
+-2-Create Logo in Illustrator, add logo to the footer
+-3-Add text to hero Image
+-4-Add custom Font
 -ask mentors how to wright TODOs
--In case my description gets big I can make it hide in mobile and add a readmore button-change the display flex to bootsrap or stick with flex to the end - or none 
--Create SVG with illustrator (includes Treehouse)
 -Ask the nigger about multiple live gitpages
 */
 
@@ -64,6 +58,12 @@ header {
     margin: 0.5rem 0;
     border-color: #02b3e4;
     border-width: 3px;
+}
+
+/*** Hero Image ***/
+.hero-image {
+    margin: 0 auto;
+    display: block;
 }
 
 /*** featured-work ***/
