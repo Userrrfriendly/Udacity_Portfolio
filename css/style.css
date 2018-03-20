@@ -5,16 +5,19 @@ img {
 }
 
 /* TODO:
+-0-Revive CodeCamp, fix past projects build new ones get the fucking degree
+-0b-Upload Calculator
+-1-fallback image for HERO with the <picture> element
+-1.a- move links from image to a seperate element
+-2-Create Logo in Illustrator
+-3-Add Description to the projects
+-4-Add text to hero Image
+-5-Add custom Font
+-6-create footer
 -ask mentors how to wright TODOs
--Add custom Font
--Add text to hero Image
--In case my description gets big I can make it hide in mobile and add a readmore button
--change the display flex to bootsrap or stick with flex to the end - or none 
--create footer
+-In case my description gets big I can make it hide in mobile and add a readmore button-change the display flex to bootsrap or stick with flex to the end - or none 
 -Create SVG with illustrator (includes Treehouse)
--fix the hero image with photoshop
 -Ask the nigger about multiple live gitpages
--Revive CodeCamp, fix past projects build new ones get the fucking degree
 */
 
 /*** header ***/
@@ -26,6 +29,7 @@ header {
     width: 3em !important;
     height: 3em !important;
     margin: auto 0;
+    /* remove this selector once you create the logo */
 }
 
 .title-container {
@@ -58,10 +62,16 @@ header {
     flex-flow: row wrap;
 }
 
+.card-container:last-child {
+    border-bottom: none;
+}
+
 .card {
     /* border: #2d3c49 solid;
     border-width: 0 0 1px 0; */
-    margin-bottom: 1rem;
+    /* border: 1px dashed grey; */
+    border-bottom: 1px dashed grey;
+    margin-bottom: 1.5rem;
     /* background-color: #cae4e6; */
     /* -webkit-box-shadow: inset 0px 0px 20px 3px rgba(0,0,0,0.49);
     -moz-box-shadow: inset 0px 0px 20px 3px rgba(0,0,0,0.49);
@@ -73,6 +83,18 @@ header {
     display: block;
     /* margin-top: 0.5rem; 
 } */
+.card-link {
+    text-decoration: none;
+    color: #02b3e4;
+
+}
+a:visited {
+    text-decoration: none;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
 
 .card-title {
     margin: 0.25rem 0;
@@ -85,10 +107,34 @@ header {
 /*** MEDIUM DEVICES ***/
 @media screen and (min-width: 700px) {
     .card-container {
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
     
     .card {
        max-width: calc(33% - 30px);
+       border-bottom: none;
+    }
+
+    .page-title {
+        font-size: 2.5rem;
+    }
+
+    .hr-header {
+        margin-bottom: 1.25rem;
+    }
+
+    .card-title {
+        /* font-size? */
+    }
+    .card-text {
+        /* font size? */
+    }
+}
+
+/*** DESKTOP  ***/
+@media screen and (min-width: 1100px) {
+    body {
+        max-width: 90%;
+        margin: 0 auto;
     }
 }
