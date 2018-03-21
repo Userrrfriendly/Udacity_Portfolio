@@ -1,11 +1,10 @@
-/*** Global CSS Rules ***/
+html {
+    font-family: 'Libre Baskerville', serif;
+}
+
 img {
     max-width: 100%;
     height: auto;
-}
-
-html {
-    font-family: 'Libre Baskerville', serif;
 }
 
 /*** header ***/
