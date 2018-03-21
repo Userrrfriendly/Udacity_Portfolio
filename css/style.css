@@ -9,6 +9,8 @@ img {
 
 /*** header ***/
 header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -54,8 +56,13 @@ header {
 }
 
 .card-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
 }
 
 .card-container :last-child {
@@ -86,12 +93,18 @@ header {
 
 /*** footer ***/
 footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 2rem;
     width: 100%;
     background-color: #02b3e4;
-    align-items: center;
-    justify-content: center; 
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; 
 }
 
 .footer-content {
@@ -105,7 +118,9 @@ footer {
     }
     
     .card-container {
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
     
     .card {
