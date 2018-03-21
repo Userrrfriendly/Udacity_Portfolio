@@ -4,33 +4,27 @@ img {
     height: auto;
 }
 
-footer {
-    display: flex;
-    height: 2rem;
-    width: 100%;
-    background-color: #02b3e4;
-    align-items: center;
-
-    justify-content: center; 
-}
-
-.footer-content {
-    margin: 0;
+html {
+    font-family: 'Libre Baskerville', serif;
 }
 
 /* TODO:
--0-Revive CodeCamp, fix past projects build new ones get the fucking degree
--1-fallback image for HERO with the <picture> element
--2-Create Logo in Illustrator, add logo to the footer
+-0-Revive CodeCamp, fix past projects build new ones get the  degree
+-1-remove fontAwesome when done with the logo
 -3-Add text to hero Image
--4-Add custom Font
 -ask mentors how to wright TODOs
--Ask the nigger about multiple live gitpages
+-Ask the teo about multiple live gitpages
 */
 
 /*** header ***/
 header {
     display: flex;
+}
+
+.logo {
+    width: 2.75rem;
+    height: 2.75rem;
+    margin: auto auto auto 0;
 }
 
 .fa-camera-retro {
@@ -45,13 +39,14 @@ header {
 }
 .page-title {
     margin: auto 5px auto auto; 
-    font-size: 1.9rem;
+    font-size: 1.75rem;
     color: #2d3c49;
 }
 
 .page-subtitle {
     margin: 0 5px 0 0;
     text-align: right;
+    font-style: italic;
 }
 
 .hr-header {
@@ -68,8 +63,9 @@ header {
 
 /*** featured-work ***/
 .featured-header {
-    color: #7d97ad;
+    color: #2d3c49;
     text-align: center;
+    text-decoration: underline;
 }
 
 .card-container {
@@ -120,6 +116,22 @@ header {
 .card-link:hover {
     text-decoration: underline;
 }
+
+/*** footer ***/
+footer {
+    display: flex;
+    height: 2rem;
+    width: 100%;
+    background-color: #02b3e4;
+    align-items: center;
+
+    justify-content: center; 
+}
+
+.footer-content {
+    margin: 0;
+}
+
 /*** MEDIUM DEVICES ***/
 @media screen and (min-width: 700px) {
     .featured-header {
@@ -146,6 +158,11 @@ header {
     .card-text,
     .card-link {
         /* text-align: center; */
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
     }
 
 }
